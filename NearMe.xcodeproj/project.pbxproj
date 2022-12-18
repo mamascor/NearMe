@@ -10,10 +10,8 @@
 		CE69E9F9294FA89B005CB50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E9F8294FA89B005CB50D /* AppDelegate.swift */; };
 		CE69E9FB294FA89B005CB50D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E9FA294FA89B005CB50D /* SceneDelegate.swift */; };
 		CE69E9FD294FA89B005CB50D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E9FC294FA89B005CB50D /* ViewController.swift */; };
-		CE69EA00294FA89B005CB50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE69E9FE294FA89B005CB50D /* Main.storyboard */; };
-		CE69EA03294FA89B005CB50D /* NearMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE69EA01294FA89B005CB50D /* NearMe.xcdatamodeld */; };
-		CE69EA05294FA89C005CB50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69EA04294FA89C005CB50D /* Assets.xcassets */; };
 		CE69EA08294FA89C005CB50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE69EA06294FA89C005CB50D /* LaunchScreen.storyboard */; };
+		CE69EA10294FA983005CB50D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69EA0F294FA983005CB50D /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +19,9 @@
 		CE69E9F8294FA89B005CB50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE69E9FA294FA89B005CB50D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE69E9FC294FA89B005CB50D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE69E9FF294FA89B005CB50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE69EA02294FA89B005CB50D /* NearMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NearMe.xcdatamodel; sourceTree = "<group>"; };
-		CE69EA04294FA89C005CB50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE69EA07294FA89C005CB50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE69EA09294FA89C005CB50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE69EA0F294FA983005CB50D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +57,9 @@
 				CE69E9F8294FA89B005CB50D /* AppDelegate.swift */,
 				CE69E9FA294FA89B005CB50D /* SceneDelegate.swift */,
 				CE69E9FC294FA89B005CB50D /* ViewController.swift */,
-				CE69E9FE294FA89B005CB50D /* Main.storyboard */,
-				CE69EA04294FA89C005CB50D /* Assets.xcassets */,
+				CE69EA0F294FA983005CB50D /* Extension.swift */,
 				CE69EA06294FA89C005CB50D /* LaunchScreen.storyboard */,
 				CE69EA09294FA89C005CB50D /* Info.plist */,
-				CE69EA01294FA89B005CB50D /* NearMe.xcdatamodeld */,
 			);
 			path = NearMe;
 			sourceTree = "<group>";
@@ -129,8 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE69EA08294FA89C005CB50D /* LaunchScreen.storyboard in Resources */,
-				CE69EA05294FA89C005CB50D /* Assets.xcassets in Resources */,
-				CE69EA00294FA89B005CB50D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,21 +136,13 @@
 				CE69E9FD294FA89B005CB50D /* ViewController.swift in Sources */,
 				CE69E9F9294FA89B005CB50D /* AppDelegate.swift in Sources */,
 				CE69E9FB294FA89B005CB50D /* SceneDelegate.swift in Sources */,
-				CE69EA03294FA89B005CB50D /* NearMe.xcdatamodeld in Sources */,
+				CE69EA10294FA983005CB50D /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE69E9FE294FA89B005CB50D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE69E9FF294FA89B005CB50D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE69EA06294FA89C005CB50D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,9 +278,10 @@
 				DEVELOPMENT_TEAM = U43K5UN843;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NearMe/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location needed to access nearby places";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed to find restaurants near you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,9 +307,10 @@
 				DEVELOPMENT_TEAM = U43K5UN843;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NearMe/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location needed to access nearby places";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed to find restaurants near you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,19 +348,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CE69EA01294FA89B005CB50D /* NearMe.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CE69EA02294FA89B005CB50D /* NearMe.xcdatamodel */,
-			);
-			currentVersion = CE69EA02294FA89B005CB50D /* NearMe.xcdatamodel */;
-			path = NearMe.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CE69E9ED294FA89B005CB50D /* Project object */;
 }
