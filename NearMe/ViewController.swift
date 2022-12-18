@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let tf = UITextField()
         tf.layer.cornerRadius = 10
         tf.clipsToBounds = true
-        tf.backgroundColor = UIColor.white
+        tf.backgroundColor = .label
         tf.placeholder = "Search"
         tf.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         tf.leftViewMode = .always
