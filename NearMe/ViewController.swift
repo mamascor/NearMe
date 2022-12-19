@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     var locationManager: CLLocationManager?
     
+    
+    //started mapview
     lazy var mapview: MKMapView = {
         let map = MKMapView()
         map.showsUserLocation = true
