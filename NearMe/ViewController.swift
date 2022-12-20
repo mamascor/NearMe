@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         return map
     }()
     
+    //Starting a textfiend to see what to type
     lazy var searchTextView: UITextField = {
         let tf = UITextField()
         tf.layer.cornerRadius = 10
